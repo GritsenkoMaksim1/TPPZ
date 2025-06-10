@@ -1,0 +1,429 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="uk" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>app module &mdash; ShelterApp Documentation 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8fa3722c"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Індекс" href="genindex.html" />
+    <link rel="search" title="Пошук" href="search.html" />
+    <link rel="next" title="init_db module" href="init_db.html" />
+    <link rel="prev" title="HrytsenkoMaksym" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            ShelterApp Documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">HrytsenkoMaksym</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">app module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#app.User"><code class="docutils literal notranslate"><span class="pre">User</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#app.User.id"><code class="docutils literal notranslate"><span class="pre">User.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#app.User.username"><code class="docutils literal notranslate"><span class="pre">User.username</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#app.User.password_hash"><code class="docutils literal notranslate"><span class="pre">User.password_hash</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#app.User.get_id"><code class="docutils literal notranslate"><span class="pre">User.get_id()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#app.add_animal"><code class="docutils literal notranslate"><span class="pre">add_animal()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app.animal_details"><code class="docutils literal notranslate"><span class="pre">animal_details()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app.delete_animal"><code class="docutils literal notranslate"><span class="pre">delete_animal()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app.edit_animal"><code class="docutils literal notranslate"><span class="pre">edit_animal()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app.get_db_connection"><code class="docutils literal notranslate"><span class="pre">get_db_connection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app.index"><code class="docutils literal notranslate"><span class="pre">index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app.load_user"><code class="docutils literal notranslate"><span class="pre">load_user()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app.login"><code class="docutils literal notranslate"><span class="pre">login()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app.logout"><code class="docutils literal notranslate"><span class="pre">logout()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app.register"><code class="docutils literal notranslate"><span class="pre">register()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="init_db.html">init_db module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ShelterApp Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">HrytsenkoMaksym</a></li>
+      <li class="breadcrumb-item active">app module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/app.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-app">
+<span id="app-module"></span><h1>app module<a class="headerlink" href="#module-app" title="Link to this heading"></a></h1>
+<p>Основний модуль веб-додатку Притулку для тварин.</p>
+<p>Цей файл містить основну логіку Flask-додатку, включаючи:
+- Налаштування додатку та віртуального середовища.
+- Управління користувацькою автентифікацією за допомогою Flask-Login.
+- Роути для відображення, додавання, редагування та видалення тварин.
+- Взаємодію з базою даних SQLite для управління інформацією про тварин та користувачів.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="app.User">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">User</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password_hash</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.User" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">UserMixin</span></code></p>
+<p>Модель користувача для Flask-Login, що представляє користувача з бази даних.</p>
+<p>Цей клас відповідає за об’єктне представлення користувачів у системі
+та надає необхідні методи для інтеграції з Flask-Login, такі як <cite>get_id()</cite>.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.User.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#app.User.id" title="Link to this definition"></a></dt>
+<dd><p>Унікальний ідентифікатор користувача в базі даних.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.User.username">
+<span class="sig-name descname"><span class="pre">username</span></span><a class="headerlink" href="#app.User.username" title="Link to this definition"></a></dt>
+<dd><p>Ім’я користувача для входу.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.User.password_hash">
+<span class="sig-name descname"><span class="pre">password_hash</span></span><a class="headerlink" href="#app.User.password_hash" title="Link to this definition"></a></dt>
+<dd><p>Хеш пароля користувача.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.User.get_id">
+<span class="sig-name descname"><span class="pre">get_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#app.User.get_id" title="Link to this definition"></a></dt>
+<dd><p>Повертає ID користувача, який використовується Flask-Login.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Повертає<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Унікальний ID користувача у вигляді рядка.</p>
+</dd>
+<dt class="field-even">Тип повернення<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.add_animal">
+<span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">add_animal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#app.add_animal" title="Link to this definition"></a></dt>
+<dd><p>Додає нову тварину до бази даних.</p>
+<p>Цей роут потребує автентифікації користувача (<cite>&#64;login_required</cite>).
+При отриманні POST-запиту, функція зчитує дані форми (ім’я, тип, вік, стать,
+стан здоров’я, опис), обробляє завантаження файлу зображення (якщо воно є),
+зберігає його до „static/uploads“ та додає всю інформацію про нову тварину
+в базу даних. Надає flash-повідомлення про успішне додавання.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Повертає<span class="colon">:</span></dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>Перенаправлення на головну сторінку після успішного додавання.</dt><dd><p>Або рендеринг шаблону „add_animal.html“ для GET-запиту.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Тип повернення<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.animal_details">
+<span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">animal_details</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">animal_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#app.animal_details" title="Link to this definition"></a></dt>
+<dd><p>Відображає деталі конкретної тварини за її ID.</p>
+<p>Здійснює запит до бази даних для отримання інформації про тварину
+за наданим ідентифікатором. Якщо тварину не знайдено, генерує 404 помилку.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметри<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>animal_id</strong> (<em>int</em>) – Унікальний ідентифікатор тварини.</p>
+</dd>
+<dt class="field-even">Повертає<span class="colon">:</span></dt>
+<dd class="field-even"><p>Рендеринг шаблону „animal_details.html“ з даними про тварину.</p>
+</dd>
+<dt class="field-odd">Тип повернення<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Викликає<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>werkzeug.exceptions.NotFound</strong> – 404 помилка HTTP, якщо тварину з таким ID не знайдено.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.delete_animal">
+<span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">delete_animal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">animal_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#app.delete_animal" title="Link to this definition"></a></dt>
+<dd><p>Видаляє запис про тварину з бази даних.</p>
+<p>Цей роут потребує автентифікації користувача (<cite>&#64;login_required</cite>).
+При отриманні POST-запиту, функція спочатку отримує інформацію про тварину,
+щоб видалити пов’язане зображення з файлової системи, якщо воно існує.
+Потім видаляє запис про тварину з бази даних.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметри<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>animal_id</strong> (<em>int</em>) – Ідентифікатор тварини, яку потрібно видалити.</p>
+</dd>
+<dt class="field-even">Повертає<span class="colon">:</span></dt>
+<dd class="field-even"><p>Перенаправлення на головну сторінку після успішного видалення.</p>
+</dd>
+<dt class="field-odd">Тип повернення<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Викликає<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>werkzeug.exceptions.NotFound</strong> – 404 помилка HTTP, якщо тварину з таким ID не знайдено.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.edit_animal">
+<span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">edit_animal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">animal_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#app.edit_animal" title="Link to this definition"></a></dt>
+<dd><p>Редагує дані про тварину за її ID.</p>
+<p>Цей роут потребує автентифікації користувача (<cite>&#64;login_required</cite>).
+Для GET-запиту, функція завантажує поточні дані тварини з бази даних
+та відображає їх у формі редагування. Якщо тварину не знайдено, генерує 404 помилку.
+При POST-запиті, оновлює інформацію про тварину в базі даних
+на основі даних форми. Надає flash-повідомлення про успішне оновлення.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметри<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>animal_id</strong> (<em>int</em>) – Ідентифікатор тварини, яку потрібно відредагувати.</p>
+</dd>
+<dt class="field-even">Повертає<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Перенаправлення на сторінку деталей тварини після успішного оновлення.</dt><dd><p>Або рендеринг шаблону „edit_animal.html“ для GET-запиту.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Тип повернення<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Викликає<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>werkzeug.exceptions.NotFound</strong> – 404 помилка HTTP, якщо тварину з таким ID не знайдено.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.get_db_connection">
+<span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">get_db_connection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Connection</span></span></span><a class="headerlink" href="#app.get_db_connection" title="Link to this definition"></a></dt>
+<dd><p>Встановлює та повертає з’єднання з базою даних SQLite.</p>
+<p>Ця функція підключається до файлу бази даних „shelter.db“
+і налаштовує <cite>row_factory</cite> на <cite>sqlite3.Row</cite>. Це дозволяє отримувати
+доступ до стовпців результатів запитів за їхніми іменами (як до елементів словника),
+що значно зручніше, ніж за індексами.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Повертає<span class="colon">:</span></dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>Об’єкт з’єднання з базою даних.</dt><dd><p>Важливо: викликаючий код несе відповідальність за закриття з’єднання.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Тип повернення<span class="colon">:</span></dt>
+<dd class="field-even"><p>sqlite3.Connection</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.index">
+<span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">index</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#app.index" title="Link to this definition"></a></dt>
+<dd><p>Відображає головну сторінку веб-додатку зі списком тварин.</p>
+<p>Цей роут підтримує функціонал пагінації, пошуку тварин за іменем
+та фільтрації за типом тварини. Всі параметри передаються через URL-запит (GET-параметри).
+Здійснює запити до бази даних для отримання списку тварин та їх типів,
+враховуючи пагінацію, фільтри та сортування за датою додавання.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметри<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>page</strong> (<em>int</em><em>, </em><em>optional</em>) – Номер поточної сторінки для пагінації. За замовчуванням 1.</p></li>
+<li><p><strong>search_query</strong> (<em>str</em><em>, </em><em>optional</em>) – Рядок пошуку за іменем тварини. За замовчуванням порожній.</p></li>
+<li><p><strong>type_filter</strong> (<em>str</em><em>, </em><em>optional</em>) – Фільтр за типом тварини. За замовчуванням порожній.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Повертає<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Відображає шаблон „index.html“ з даними про тварин,</dt><dd><p>унікальні типи тварин для фільтрації,
+параметри пагінації та поточні значення фільтрів.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Тип повернення<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.load_user">
+<span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">load_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#app.User" title="app.User"><span class="pre">User</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#app.load_user" title="Link to this definition"></a></dt>
+<dd><p>Завантажує користувача за його ID для Flask-Login.</p>
+<p>Ця функція використовується Flask-Login для отримання об’єкта користувача
+на основі його унікального ідентифікатора, збереженого у сесії.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметри<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>user_id</strong> (<em>str</em>) – ID користувача, який потрібно завантажити.</p>
+</dd>
+<dt class="field-even">Повертає<span class="colon">:</span></dt>
+<dd class="field-even"><p>Об’єкт користувача, якщо знайдено, інакше None.</p>
+</dd>
+<dt class="field-odd">Тип повернення<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#app.User" title="app.User">User</a> | None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.login">
+<span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">login</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#app.login" title="Link to this definition"></a></dt>
+<dd><p>Обробляє вхід користувачів у систему.</p>
+<p>Якщо користувач вже автентифікований, він буде перенаправлений на головну сторінку.
+При отриманні POST-запиту, функція зчитує ім’я користувача та пароль з форми,
+перевіряє їх за допомогою хешування паролів для безпеки. У випадку успішного входу,
+користувач автентифікується за допомогою Flask-Login та перенаправляється на головну сторінку.
+Надає flash-повідомлення про статус входу (успіх або неправильний логін/пароль).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Повертає<span class="colon">:</span></dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>Перенаправлення на головну сторінку після успішного входу.</dt><dd><p>Відображення шаблону „login.html“ для GET-запиту
+або у випадку невдалого входу.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Тип повернення<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.logout">
+<span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">logout</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#app.logout" title="Link to this definition"></a></dt>
+<dd><p>Вихід користувача із системи.</p>
+<p>Цей роут потребує автентифікації користувача (<cite>&#64;login_required</cite>).
+Виконує вихід поточного користувача за допомогою Flask-Login,
+видаляє його зі сесії та перенаправляє на головну сторінку.
+Надає інформаційне flash-повідомлення про вихід.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Повертає<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Перенаправлення на головну сторінку після виходу.</p>
+</dd>
+<dt class="field-even">Тип повернення<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.register">
+<span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">register</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#app.register" title="Link to this definition"></a></dt>
+<dd><p>Обробляє реєстрацію нових користувачів.</p>
+<p>Якщо користувач вже автентифікований, він буде перенаправлений на головну сторінку.
+При отриманні POST-запиту, функція зчитує ім’я користувача та пароль з форми,
+перевіряє унікальність імені, хешує пароль та зберігає дані нового користувача
+у базі даних. Надає відповідні flash-повідомлення про успіх або помилку.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Повертає<span class="colon">:</span></dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>Перенаправлення на головну сторінку або сторінку входу у випадку успіху.</dt><dd><p>Перенаправлення на сторінку реєстрації або відображення шаблону
+„register.html“ у випадку помилки або GET-запиту.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Тип повернення<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="HrytsenkoMaksym" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="init_db.html" class="btn btn-neutral float-right" title="init_db module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, HrytsenkoMaksym.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
