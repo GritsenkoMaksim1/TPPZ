@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="p-4 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-3">
+            <h1 class="display-5 fw-bold">Знайди собі друга</h1>
+            <p class="col-md-8 fs-5">Перегляньте наших чудових тваринок, які шукають люблячу родину. Використовуйте пошук та фільтри, щоб знайти ідеального компаньйона.</p>
+        </div>
+    </div>
+
+    <form method="get" action="{{ url_for('index') }}" class="row g-3 mb-4 align-items-center">
+        <div class="col-md-6">
+            <input type="search" name="search" class="form-control" placeholder="Пошук за іменем..." value="{{ search_query }}">
+        </div>
+        <div class="col-md-3">
+            <select name="type" class="form-select">
+                <option value="">Всі види</option>
+                {% for type in animal_types %}
+                <option value="{{ type.type }}" {% if type.type == type_filter %}selected{% endif %}>{{ type.type }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-3">
+            <button type="submit" class="btn btn-primary w-100">Знайти</button>
+        </div>
+    </form>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for animal in animals %}
+        <div class="col">
+            <div class="card h-100">
+                <a href="{{ url_for('animal_details', animal_id=animal.id) }}" class="text-decoration-none text-dark">
+                    <img src="{{ url_for('static', filename='uploads/' + animal['image_filename']) if animal.image_filename else 'https://via.placeholder.com/400x220.png?text=Немає+фото' }}" class="card-img-top" alt="{{ animal.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ animal.name }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ animal.type }}, {{ animal.age }} років</h6>
+                    </div>
+                </a>
+            </div>
+        </div>
+        {% else %}
+        <div class="col-12">
+            <div class="alert alert-info text-center">На жаль, за вашим запитом тварин не знайдено.</div>
+        </div>
+        {% endfor %}
+    </div>
+
+    {% if total_pages > 1 %}
+    <nav aria-label="Page navigation" class="mt-4">
+        <ul class="pagination justify-content-center">
+            <li class="page-item {% if page == 1 %}disabled{% endif %}">
+                <a class="page-link" href="{{ url_for('index', page=page-1, search=search_query, type=type_filter) }}">Попередня</a>
+            </li>
+            {% for p in range(1, total_pages + 1) %}
+            <li class="page-item {% if p == page %}active{% endif %}">
+                <a class="page-link" href="{{ url_for('index', page=p, search=search_query, type=type_filter) }}">{{ p }}</a>
+            </li>
+            {% endfor %}
+            <li class="page-item {% if page == total_pages %}disabled{% endif %}">
+                <a class="page-link" href="{{ url_for('index', page=page+1, search=search_query, type=type_filter) }}">Наступна</a>
+            </li>
+        </ul>
+    </nav>
+    {% endif %}
+
+{% endblock %}
