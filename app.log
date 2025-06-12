@@ -2,3 +2,71 @@
 2025-06-12 12:52:38,315 - __main__ - INFO - Веб-додаток Притулку для тварин запускається...
 2025-06-12 12:52:54,955 - __main__ - DEBUG - З'єднання з базою даних 'shelter.db' встановлено.
 2025-06-12 12:52:54,962 - __main__ - DEBUG - Головна сторінка завантажена. Параметри: page=1, search='', type=''
+2025-06-12 13:06:44,000 - __main__ - INFO - <module> - Веб-додаток Притулку для тварин запускається...
+2025-06-12 13:06:44,261 - __main__ - INFO - <module> - Веб-додаток Притулку для тварин запускається...
+2025-06-12 13:16:57,186 - __main__ - INFO - <module> - Веб-додаток Притулку для тварин запускається...
+2025-06-12 13:19:25,287 - __main__ - INFO - <module> - Веб-додаток Притулку для тварин запускається...
+2025-06-12 13:19:25,554 - __main__ - INFO - <module> - Веб-додаток Притулку для тварин запускається...
+2025-06-12 13:19:34,489 - __main__ - INFO - index - 
+--- CPU Профіль для '/':
+         317 function calls (302 primitive calls) in 0.002 seconds
+
+   Ordered by: cumulative time
+   List reduced from 100 to 10 due to restriction <10>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        3    0.001    0.000    0.001    0.000 {method 'execute' of 'sqlite3.Connection' objects}
+        1    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\HrytsenkoMaksym\app.py:127(get_db_connection)
+        1    0.000    0.000    0.000    0.000 {built-in method _sqlite3.connect}
+        1    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\HrytsenkoMaksym\app.py:167(get_log_context)
+     20/7    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\Diplom\.venv1\lib\site-packages\werkzeug\local.py:310(__get__)
+      6/5    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\Diplom\.venv1\lib\site-packages\werkzeug\utils.py:95(__get__)
+        1    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\Diplom\.venv1\lib\site-packages\werkzeug\sansio\request.py:204(url)
+        1    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\Diplom\.venv1\lib\site-packages\werkzeug\sansio\utils.py:105(get_current_url)
+        2    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\Diplom\.venv1\lib\site-packages\werkzeug\local.py:525(_get_current_object)
+        2    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\Diplom\.venv1\lib\site-packages\flask_login\utils.py:25(<lambda>)
+
+
+
+2025-06-12 13:19:36,116 - __main__ - INFO - index - 
+--- CPU Профіль для '/':
+         352 function calls (337 primitive calls) in 0.001 seconds
+
+   Ordered by: cumulative time
+   List reduced from 98 to 10 due to restriction <10>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        3    0.001    0.000    0.001    0.000 {method 'execute' of 'sqlite3.Connection' objects}
+        1    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\HrytsenkoMaksym\app.py:127(get_db_connection)
+        1    0.000    0.000    0.000    0.000 {built-in method _sqlite3.connect}
+        1    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\HrytsenkoMaksym\app.py:167(get_log_context)
+      6/5    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\Diplom\.venv1\lib\site-packages\werkzeug\utils.py:95(__get__)
+     20/7    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\Diplom\.venv1\lib\site-packages\werkzeug\local.py:310(__get__)
+        2    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\Diplom\.venv1\lib\site-packages\werkzeug\local.py:525(_get_current_object)
+        2    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\Diplom\.venv1\lib\site-packages\flask_login\utils.py:25(<lambda>)
+        2    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\Diplom\.venv1\lib\site-packages\flask_login\utils.py:367(_get_user)
+        1    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\Diplom\.venv1\lib\site-packages\werkzeug\sansio\request.py:204(url)
+
+
+
+2025-06-12 13:19:38,440 - __main__ - INFO - index - 
+--- CPU Профіль для '/':
+         298 function calls (283 primitive calls) in 0.001 seconds
+
+   Ordered by: cumulative time
+   List reduced from 88 to 10 due to restriction <10>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        3    0.001    0.000    0.001    0.000 {method 'execute' of 'sqlite3.Connection' objects}
+        1    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\HrytsenkoMaksym\app.py:127(get_db_connection)
+        1    0.000    0.000    0.000    0.000 {built-in method _sqlite3.connect}
+        1    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\HrytsenkoMaksym\app.py:167(get_log_context)
+     20/7    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\Diplom\.venv1\lib\site-packages\werkzeug\local.py:310(__get__)
+        2    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\Diplom\.venv1\lib\site-packages\werkzeug\local.py:525(_get_current_object)
+        2    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\Diplom\.venv1\lib\site-packages\flask_login\utils.py:25(<lambda>)
+        2    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\Diplom\.venv1\lib\site-packages\flask_login\utils.py:367(_get_user)
+      6/5    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\Diplom\.venv1\lib\site-packages\werkzeug\utils.py:95(__get__)
+        1    0.000    0.000    0.000    0.000 E:\Users\Егор\PycharmProjects\Diplom\.venv1\lib\site-packages\flask_login\login_manager.py:343(_load_user)
+
+
+

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Внутрішня помилка сервера{% endblock %}
+
+{% block content %}
+<div class="container text-center mt-5">
+    <h1 class="display-4">500 - Внутрішня помилка сервера</h1>
+    <p class="lead">Виникла непередбачена помилка на сервері. Ми вже працюємо над її виправленням.</p>
+    {% if error_id %}
+    <p>Будь ласка, повідомте про цю помилку, вказавши код: <strong>{{ error_id }}</strong></p>
+    {% endif %}
+    <a href="{{ url_for('index') }}" class="btn btn-primary">Повернутися на головну</a>
+</div>
+{% endblock %}
